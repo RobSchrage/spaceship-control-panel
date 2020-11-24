@@ -1,20 +1,20 @@
+const starcraftBaseURL = 'http://www.hazmatt.net/gaming/starcraft/';
+
 function nuclearMissleReady() {
-  playSound('http://www.hazmatt.net/gaming/starcraft/terran/units/advisor/tadupd07.wav');
+  playSound(`${starcraftBaseURL}terran/units/advisor/tadupd07.wav`);
 }
 
 function nuclearLaunchDetected() {
-  playSound('http://www.hazmatt.net/gaming/starcraft/terran/units/advisor/tadupd04.wav');
+  playSound(`${starcraftBaseURL}terran/units/advisor/tadupd04.wav`);
 }
 
 function medicDidSomeonePageMe() {
-  playSound('http://www.hazmatt.net/gaming/starcraft/terran/units/medic/tmdwht01.wav');
+  playSound(`${starcraftBaseURL}terran/units/medic/tmdwht01.wav`);
 }
 
 function ghostSomebodyCallForAnExterminator() {
-  playSound('http://www.hazmatt.net/gaming/starcraft/terran/units/ghost/tghrdy00.wav');
+  playSound(`${starcraftBaseURL}terran/units/ghost/tghrdy00.wav`);
 }
-
-//http://www.hazmatt.net/gaming/starcraft/terran/units/ghost/tghrdy00.wav
 
 function actionClicked() {
   setEventButtonsActiveStatus(true);
