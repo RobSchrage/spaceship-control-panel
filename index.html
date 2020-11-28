@@ -8,11 +8,11 @@
   <title>Julia's Spaceship</title>
 </head>
 <body>
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="introModal" tabindex="-1" aria-labelledby="introModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title w-100 text-center" id="exampleModalLabel">Welcome to Julia's Space Ship!</h5>
+          <h1 class="modal-title w-100 text-center" id="introModalLabel">Welcome to Julia's Space Ship!</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -28,15 +28,28 @@
   </div>
 
   <div class="container-fluid text-center">
+    <div>
+      <button type="button" class="btn btn-warning p-4 m-1" onclick="nuclearMissleReady()"><i class="fas fa-radiation-alt fa-2x"></i></button>
+      <button type="button" class="btn btn-danger p-4 m-1" onclick="nuclearLaunchDetected()"><i class="fas fa-radiation-alt fa-2x"></i></button>
+    </div>
     <div class="p-2 event-buttons">
-      <button type="button" class="btn btn-warning p-4 m-1" onclick="nuclearMissleReady()">Ready</button>
-      <button type="button" class="btn btn-danger p-4 m-1" onclick="nuclearLaunchDetected()">Launch</button>
-      <button type="button" class="btn btn-primary p-4 m-1" onclick="playSound('http://www.hazmatt.net/gaming/starcraft/terran/units/kerrigan/ukewht00.wav')">Kerrigan</button>
-      <button type="button" class="btn btn-primary p-4 m-1" onclick="playSound('assets/tmdwht01.wav')">Medic</button>
-      <button type="button" class="btn btn-primary p-4 m-1" onclick="playSound('http://www.hazmatt.net/gaming/starcraft/terran/units/goliath/tgowht02.wav')">Goliath</button>
+      <button type="button" class="btn btn-primary p-4 m-1" onclick="playSound('http://www.hazmatt.net/gaming/starcraft/terran/units/kerrigan/ukewht00.wav')"><i class="fas fa-crosshairs fa-2x"></i></button>
+      <button type="button" class="btn btn-primary p-4 m-1" onclick="playSound('http://www.hazmatt.net/gaming/starcraft/terran/units/goliath/tgowht02.wav')"><i class="fas fa-fighter-jet fa-2x"></i></button>
     </div>
     <div>
-      <button type="button" class="btn btn-success" style="height: 200px; width: 200px;" onclick="actionClicked()">Reset</button>
+      <button type="button" class="btn btn-primary p-4 m-1" onclick="playSound('assets/medic/tmdwht00.wav')"><i class="fas fa-user-nurse fa-2x"></i></button>
+      <button type="button" class="btn btn-primary p-4 m-1" onclick="playSound('assets/medic/tmdwht01.wav')"><i class="fas fa-user-nurse fa-2x"></i></button>
+      <button type="button" class="btn btn-primary p-4 m-1" onclick="playSound('assets/medic/tmdwht02.wav')"><i class="fas fa-user-nurse fa-2x"></i></button>
+      <button type="button" class="btn btn-primary p-4 m-1" onclick="playSound('assets/medic/tmdwht03.wav')"><i class="fas fa-user-nurse fa-2x"></i></button>
+    </div>
+    <div>
+      <button type="button" class="btn btn-primary p-4 m-1" onclick="playSound('assets/medic/tmdyes00.wav')"><i class="fas fa-user-nurse fa-2x"></i></button>
+      <button type="button" class="btn btn-primary p-4 m-1" onclick="playSound('assets/medic/tmdyes01.wav')"><i class="fas fa-user-nurse fa-2x"></i></button>
+      <button type="button" class="btn btn-primary p-4 m-1" onclick="playSound('assets/medic/tmdyes02.wav')"><i class="fas fa-user-nurse fa-2x"></i></button>
+      <button type="button" class="btn btn-primary p-4 m-1" onclick="playSound('assets/medic/tmdyes03.wav')"><i class="fas fa-user-nurse fa-2x"></i></button>   
+    </div>
+    <div>
+      <!-- <button type="button" class="btn btn-success" style="height: 200px; width: 200px;" onclick="actionClicked()">Reset</button> -->
     </div>
 
   </div>

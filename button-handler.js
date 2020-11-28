@@ -31,5 +31,5 @@ function playSound(url) {
   var a = new Audio(url);
   a.play();
 
-  setEventButtonsActiveStatus(false);
+  //setEventButtonsActiveStatus(false);
 }
