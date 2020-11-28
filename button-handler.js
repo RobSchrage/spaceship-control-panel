@@ -9,7 +9,8 @@ function nuclearLaunchDetected() {
 }
 
 function medicDidSomeonePageMe() {
-  playSound(`${starcraftBaseURL}terran/units/medic/tmdwht01.wav`);
+  var x = document.getElementById("myAudio"); 
+  x.play();
 }
 
 function ghostSomebodyCallForAnExterminator() {
@@ -31,6 +32,4 @@ function playSound(url) {
   a.play();
 
   setEventButtonsActiveStatus(false);
-
-
 }
