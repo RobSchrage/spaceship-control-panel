@@ -29,7 +29,10 @@ function setEventButtonsActiveStatus(buttonStatus) {
 
 function playSound(url) {
   var a = new Audio(url);
+  $('button').prop('disabled', true)
   a.play();
-
+  setTimeout(function() { 
+    $('button').prop('disabled', false)
+  }, 2000);
   //setEventButtonsActiveStatus(false);
 }
